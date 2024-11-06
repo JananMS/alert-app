@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
+  // Function to trigger the alert
+  const handleClick = () => {
+    alert("Button clicked!");
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React Alert Example</h1>
+      <button onClick={handleClick}>Click Me</button>
     </div>
   );
 }
